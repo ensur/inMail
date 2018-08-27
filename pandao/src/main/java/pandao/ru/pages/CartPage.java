@@ -11,7 +11,7 @@ public class CartPage {
     }
 
     @FindBy(xpath = "//p[@class= 'cart-description']//a")//товар в корзине
-    WebElement cartProduct;
+    private WebElement cartProduct;
 
     public String getCartUrl(){
         return driver.getCurrentUrl();

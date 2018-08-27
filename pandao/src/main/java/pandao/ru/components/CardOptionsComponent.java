@@ -12,10 +12,10 @@ public class CardOptionsComponent {
         this.driver = driver;
     }
     @FindBy(xpath = "//h1[contains(@class, 'product-title')]")
-    WebElement title;
+    private WebElement title;
 
     @FindBy(xpath = "//input[@value= 'Купить сейчас']")
-    WebElement buyButton;
+    private WebElement buyButton;
 
     public boolean checkTitle(){//проверка наличия заголовка
         return !title.getText().isEmpty();

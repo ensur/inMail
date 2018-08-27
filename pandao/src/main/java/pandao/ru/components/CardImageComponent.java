@@ -13,13 +13,13 @@ public class CardImageComponent {
     }
 
     @FindBy(xpath = "//div[contains(@class, 'photo')]")//Основное фото
-    List<WebElement> cardImage;
+    private List<WebElement> cardImage;
 
     @FindBy(xpath = "//div[contains(@class, 'hide')]//div[contains(@class, 'color-sel')]")//Миниатюры в режиме планшета
-    List<WebElement> cardMiniatureTablet;
+    private List<WebElement> cardMiniatureTablet;
 
     @FindBy(xpath = "//div[contains(@class, 'product-right')]//div[contains(@class, 'color-sel')]")//Миниатюры в полноэкранном режиме
-    List<WebElement> cardMiniatureRight;
+    private List<WebElement> cardMiniatureRight;
 
 
     public boolean isTabletActive(){//Активен ли планшетный режим

@@ -14,7 +14,7 @@ import pandao.ru.pages.CartPage;
 
 import static org.junit.Assert.assertTrue;
 
-public class Test {
+public class PandaoCardTest {
     private DriverProvider driverProvider = null;
     @Before
     public void initDriver(){
@@ -25,7 +25,7 @@ public class Test {
         driverProvider.closeDriver();
     }
     @org.junit.Test
-    public void test1(){
+    public void cardTest(){
         Wait<WebDriver> wait = new WebDriverWait(driverProvider.getDriver(), 5, 1000);
         CardPage cardPage = PageFactory.initElements(driverProvider.getDriver(), CardPage.class);
         cardPage.open();
